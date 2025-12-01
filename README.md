@@ -77,25 +77,6 @@ baseball_app/
 `ballpark.png`を任意の球場画像に置き換えることができます。
 画像サイズは576x576ピクセルを推奨します。
 
-## 🌐 デプロイ
-
-### Streamlit Cloudでのデプロイ
-1. GitHubにリポジトリをプッシュ
-2. [Streamlit Cloud](https://streamlit.io/cloud)にアクセス
-3. 「New app」から該当リポジトリを選択
-4. `app.py`をメインファイルとして指定
-
-### Herokuでのデプロイ
-`Procfile`を追加:
-```
-web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
-```
-
 ## 📝 ライセンス
 
 このプロジェクトは教育・個人利用を目的としています。
-
-## 🙏 謝辞
-
-- データ処理: `process_data.py`
-- 可視化参考: `data_viz.py`
